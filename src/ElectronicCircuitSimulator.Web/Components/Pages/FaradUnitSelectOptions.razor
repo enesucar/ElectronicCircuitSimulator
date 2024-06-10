@@ -1,0 +1,10 @@
+﻿@using ElectronicCircuitSimulator.Core.Enums
+
+@foreach (FaradUnit faradUnit in Enum.GetValues(typeof(FaradUnit)))
+{
+    <option value="@faradUnit">@faradUnit.GetSymbol()</option>
+}
+
+@code {
+
+}

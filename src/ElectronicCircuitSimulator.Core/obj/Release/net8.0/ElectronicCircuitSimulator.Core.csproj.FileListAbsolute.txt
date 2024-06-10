@@ -1,0 +1,11 @@
+C:\Users\Enes\Desktop\ElectronicCircuitSimulator\src\ElectronicCircuitSimulator.Core\bin\Release\net8.0\ElectronicCircuitSimulator.Core.deps.json
+C:\Users\Enes\Desktop\ElectronicCircuitSimulator\src\ElectronicCircuitSimulator.Core\bin\Release\net8.0\ElectronicCircuitSimulator.Core.dll
+C:\Users\Enes\Desktop\ElectronicCircuitSimulator\src\ElectronicCircuitSimulator.Core\bin\Release\net8.0\ElectronicCircuitSimulator.Core.pdb
+C:\Users\Enes\Desktop\ElectronicCircuitSimulator\src\ElectronicCircuitSimulator.Core\obj\Release\net8.0\ElectronicCircuitSimulator.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Enes\Desktop\ElectronicCircuitSimulator\src\ElectronicCircuitSimulator.Core\obj\Release\net8.0\ElectronicCircuitSimulator.Core.AssemblyInfoInputs.cache
+C:\Users\Enes\Desktop\ElectronicCircuitSimulator\src\ElectronicCircuitSimulator.Core\obj\Release\net8.0\ElectronicCircuitSimulator.Core.AssemblyInfo.cs
+C:\Users\Enes\Desktop\ElectronicCircuitSimulator\src\ElectronicCircuitSimulator.Core\obj\Release\net8.0\ElectronicCircuitSimulator.Core.csproj.CoreCompileInputs.cache
+C:\Users\Enes\Desktop\ElectronicCircuitSimulator\src\ElectronicCircuitSimulator.Core\obj\Release\net8.0\ElectronicCircuitSimulator.Core.dll
+C:\Users\Enes\Desktop\ElectronicCircuitSimulator\src\ElectronicCircuitSimulator.Core\obj\Release\net8.0\refint\ElectronicCircuitSimulator.Core.dll
+C:\Users\Enes\Desktop\ElectronicCircuitSimulator\src\ElectronicCircuitSimulator.Core\obj\Release\net8.0\ElectronicCircuitSimulator.Core.pdb
+C:\Users\Enes\Desktop\ElectronicCircuitSimulator\src\ElectronicCircuitSimulator.Core\obj\Release\net8.0\ref\ElectronicCircuitSimulator.Core.dll

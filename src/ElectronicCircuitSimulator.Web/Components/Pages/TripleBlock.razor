@@ -1,0 +1,334 @@
+﻿@page "/2"
+
+@using Blazored.LocalStorage
+@using Blazored.Toast.Services
+@using ElectronicCircuitSimulator.Core.Enums
+@using ElectronicCircuitSimulator.Web.Constants
+@using ElectronicCircuitSimulator.Web.Mappers
+@using ElectronicCircuitSimulator.Web.ViewModels
+@using Blazored.Toast.Configuration
+@using Microsoft.AspNetCore.Components.Forms
+
+@inherits BlockBase
+
+<h4 class="fw-bold py-2 mb-4">
+    @WebConstants.ProjectName
+    <button type="button" class="btn btn-icon" @onclick="ChangeTheme">
+        <i class="bx bx-transfer-alt"></i>
+    </button>
+</h4>
+<div class="row">
+    <div class="col-xl-4 mt-2">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="text-center card-header" style="font-size:1.3rem">AC Devresi</h5>
+                <div class="image-container-circuit-2">
+                    <img src="/assets/img/ac.png" class="w-100" />
+                    <div class="text-overlay-resistance-a">@GetTextOnImage("R(A)", Model!.Resistance_a.Value, Model.Resistance_a.Unit.GetSymbol())</div>
+                    <div class="text-overlay-resistance-b">@GetTextOnImage("R(B)", Model.Resistance_b.Value, Model.Resistance_b.Unit.GetSymbol())</div>
+                    <div class="text-overlay-resistance-g">@GetTextOnImage("R(G)", Model.Resistance_g.Value, Model.Resistance_g.Unit.GetSymbol())</div>
+                    <div class="text-overlay-resistance-e">@GetTextOnImage("R(E)", Model.Resistance_E.Value, Model.Resistance_E.Unit.GetSymbol())</div>
+                    <div class="text-overlay-resistance-y">@GetTextOnImage("R(Y)", Model.Resistance_y.Value, Model.Resistance_y.Unit.GetSymbol())</div>
+                    <div class="text-overlay-voltage-g">@GetTextOnImage("V(G)", Model.Voltage_BE.Value, Model.Voltage_BE.Unit.GetSymbol())</div>
+                    <div class="text-overlay-capacitance-1-2">@GetTextOnImage("C(1)", Model.Capacitance_1.Value, Model.Capacitance_1.Unit.GetSymbol())</div>
+                    <div class="text-overlay-capacitance-2-2">@GetTextOnImage("C(2)", Model.Capacitance_2.Value, Model.Capacitance_2.Unit.GetSymbol())</div>
+                    <div class="text-overlay-voltage-cc-2">@GetTextOnImage("V(CC)", Model.Voltage_CC.Value, Model.Voltage_CC.Unit.GetSymbol())</div>
+                </div>
+                <div class="row mb-3 mt-4">
+                    <label class="col-sm-3 col-form-label" for="basic-default-name">R<sub>g</sub></label>
+                    <div class="col-sm-6">
+                        <input type="number" class="form-control" id="basic-default-name" @bind=Model!.Resistance_g.Value @bind:event="oninput" />
+                    </div>
+                    <div class="col-sm-3">
+                        <InputSelect class="form-select" @bind-Value="Model!.Resistance_g.Unit">
+                            <OhmUnitSelectOptions></OhmUnitSelectOptions>
+                        </InputSelect>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="basic-default-name">R<sub>a</sub></label>
+                    <div class="col-sm-6">
+                        <input type="number" class="form-control" id="basic-default-name" @bind=Model!.Resistance_a.Value @bind:event="oninput" />
+                    </div>
+                    <div class="col-sm-3">
+                        <InputSelect class="form-select" @bind-Value="Model!.Resistance_a.Unit">
+                            <OhmUnitSelectOptions></OhmUnitSelectOptions>
+                        </InputSelect>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="basic-default-name">R<sub>b</sub></label>
+                    <div class="col-sm-6">
+                        <input type="number" class="form-control" id="basic-default-name" @bind=Model!.Resistance_b.Value @bind:event="oninput" />
+                    </div>
+                    <div class="col-sm-3">
+                        <InputSelect class="form-select" @bind-Value="Model!.Resistance_b.Unit">
+                            <OhmUnitSelectOptions></OhmUnitSelectOptions>
+                        </InputSelect>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="basic-default-name">R<sub>E</sub></label>
+                    <div class="col-sm-6">
+                        <input type="number" class="form-control" id="basic-default-name" @bind=Model!.Resistance_E.Value @bind:event="oninput" />
+                    </div>
+                    <div class="col-sm-3">
+                        <InputSelect class="form-select" @bind-Value="Model!.Resistance_E.Unit">
+                            <OhmUnitSelectOptions></OhmUnitSelectOptions>
+                        </InputSelect>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="basic-default-name">R<sub>y</sub></label>
+                    <div class="col-sm-6">
+                        <input type="number" class="form-control" id="basic-default-name" @bind=Model!.Resistance_y.Value @bind:event="oninput" />
+                    </div>
+                    <div class="col-sm-3">
+                        <InputSelect class="form-select" @bind-Value="Model!.Resistance_y.Unit">
+                            <OhmUnitSelectOptions></OhmUnitSelectOptions>
+                        </InputSelect>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="basic-default-name">C<sub>1</sub></label>
+                    <div class="col-sm-6">
+                        <input type="number" class="form-control" id="basic-default-name" @bind=Model!.Capacitance_1.Value @bind:event="oninput" />
+                    </div>
+                    <div class="col-sm-3">
+                        <InputSelect class="form-select" @bind-Value="Model!.Capacitance_1.Unit">
+                            <FaradUnitSelectOptions></FaradUnitSelectOptions>
+                        </InputSelect>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="basic-default-name">C<sub>2</sub></label>
+                    <div class="col-sm-6">
+                        <input type="number" class="form-control" id="basic-default-name" @bind=Model!.Capacitance_2.Value @bind:event="oninput" />
+                    </div>
+                    <div class="col-sm-3">
+                        <InputSelect class="form-select" @bind-Value="Model!.Capacitance_2.Unit">
+                            <FaradUnitSelectOptions></FaradUnitSelectOptions>
+                        </InputSelect>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="basic-default-name">V<sub>cc</sub></label>
+                    <div class="col-sm-6">
+                        <input type="number" class="form-control" id="basic-default-name" @bind=Model!.Voltage_CC.Value @bind:event="oninput" />
+                    </div>
+                    <div class="col-sm-3">
+                        <InputSelect class="form-select" @bind-Value="Model!.Voltage_CC.Unit">
+                            <VoltUnitSelectOptions></VoltUnitSelectOptions>
+                        </InputSelect>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="basic-default-name">V<sub>BE</sub></label>
+                    <div class="col-sm-6">
+                        <input type="number" class="form-control" id="basic-default-name" @bind=Model!.Voltage_BE.Value @bind:event="oninput" />
+                    </div>
+                    <div class="col-sm-3">
+                        <InputSelect class="form-select" @bind-Value="Model!.Voltage_BE.Unit">
+                            <VoltUnitSelectOptions></VoltUnitSelectOptions>
+                        </InputSelect>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="basic-default-name">β<sub>0</sub></label>
+                    <div class="col-sm-6">
+                        <input type="number" class="form-control" id="basic-default-name" @bind=Model!.Beta_0 @bind:event="oninput" />
+                    </div>
+                </div>
+                <div>
+                    <div class="col-sm-12">
+                        <button class="btn btn-info form-control" type="button" @onclick="() => Calculate(Model!)">Hesapla</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4 mt-2">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="text-center card-header" style="font-size:1.3rem">DC Devresi</h5>
+                <div class="image-container-circuit-2">
+                    <img src="/assets/img/dc.png" class="w-100" />
+                    <div class="text-overlay-resistance-b-circuit-2-2">@GetTextOnImage("R(B)", Round(Model.Resistance_b.Value), Model.Resistance_b.Unit.GetSymbol())</div>
+                    <div class="text-overlay-resistance-e-circuit-2">@GetTextOnImage("R(E)", Round(Model.Resistance_E.Value), Model.Resistance_E.Unit.GetSymbol())</div>
+                    <div class="text-overlay-voltage-b-circuit-2">@GetTextOnImage("V(B)", Round(Model.Voltage_B.Value), Model.Voltage_B.Unit.GetSymbol())</div>
+                    <div class="text-overlay-voltage-cc-circuit-2-2">@GetTextOnImage("V(CC)", Round(Model.Voltage_CC.Value), Model.Voltage_CC.Unit.GetSymbol())</div>
+                </div>
+                <div class="row mb-3 mt-4">
+                    <label class="col-sm-3 col-form-label" for="basic-default-name">I<sub>B</sub></label>
+                    <div class="col-sm-6">
+                        <input class="form-control" id="basic-default-name" value=@Round(Model.Current_B.Value) disabled />
+                    </div>
+                    <div class="col-sm-3">
+                        <select class="form-select" value="@Model.Current_B.Unit" @onchange="@((ChangeEventArgs e) => ConvertToAmperUnit(e, Model.Current_B))">
+                            <AmperUnitSelectOptions></AmperUnitSelectOptions>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="basic-default-name">I<sub>C</sub></label>
+                    <div class="col-sm-6">
+                        <input class="form-control" id="basic-default-name" value=@Round(Model.Current_C.Value) disabled />
+                    </div>
+                    <div class="col-sm-3">
+                        <select class="form-select" value="@Model.Current_C.Unit" @onchange="@((ChangeEventArgs e) => ConvertToAmperUnit(e, Model.Current_C))">
+                            <AmperUnitSelectOptions></AmperUnitSelectOptions>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="basic-default-name">I<sub>E</sub></label>
+                    <div class="col-sm-6">
+                        <input class="form-control" id="basic-default-name" value=@Round(Model.Current_E.Value) disabled />
+                    </div>
+                    <div class="col-sm-3">
+                        <select class="form-select" value="@Model.Current_E.Unit" @onchange="@((ChangeEventArgs e) => ConvertToAmperUnit(e, Model.Current_E))">
+                            <AmperUnitSelectOptions></AmperUnitSelectOptions>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="basic-default-name">V<sub>CE</sub></label>
+                    <div class="col-sm-6">
+                        <input class="form-control" id="basic-default-name" value=@Round(Model.Voltage_CE.Value) disabled />
+                    </div>
+                    <div class="col-sm-3">
+                        <select class="form-select" value="@Model.Voltage_CE.Unit" @onchange="@((ChangeEventArgs e) => ConvertToVoltUnit(e, Model.Voltage_CE))">
+                            <VoltUnitSelectOptions></VoltUnitSelectOptions>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="basic-default-name">V<sub>CB</sub></label>
+                    <div class="col-sm-6">
+                        <input class="form-control" id="basic-default-name" value=@Round(Model.Voltage_CB.Value) disabled />
+                    </div>
+                    <div class="col-sm-3">
+                        <select class="form-select" value="@Model.Voltage_CB.Unit" @onchange="@((ChangeEventArgs e) => ConvertToVoltUnit(e, Model.Voltage_CB))">
+                            <VoltUnitSelectOptions></VoltUnitSelectOptions>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="basic-default-name">V<sub>BE</sub></label>
+                    <div class="col-sm-6">
+                        <input class="form-control" id="basic-default-name" value=@Round(Model.Voltage_BE.Value) disabled />
+                    </div>
+                    <div class="col-sm-3">
+                        <select class="form-select" value="@Model.Voltage_BE.Unit" @onchange="@((ChangeEventArgs e) => ConvertToVoltUnit(e, Model.Voltage_BE))">
+                            <VoltUnitSelectOptions></VoltUnitSelectOptions>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="basic-default-name" style="font-size: 12px;">Çalışma Bölgesi</label>
+                    <div class="col-sm-9">
+                        <input class="form-control" id="basic-default-name" value=@Model!.OperationRegion.GetName() disabled />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4 mt-2">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="text-center card-header" style="font-size:1.3rem">Alçak Frekans Analizi Devresi</h5>
+                <div class="image-container-circuit-2">
+                    <img src="/assets/img/frequency.png" class="w-100" />
+                    <div class="text-overlay-resistance-g-circuit-3">@GetTextOnImage("R(G)", Round(Model.Resistance_g.Value), Model.Resistance_g.Unit.GetSymbol())</div>
+                    <div class="text-overlay-resistance-b-circuit-3">@GetTextOnImage("R(B)", Round(Model.Resistance_B.Value), Model.Resistance_B.Unit.GetSymbol())</div>
+                    <div class="text-overlay-resistance-e-circuit-3">@GetTextOnImage("R(E)", Round(Model.Resistance_E.Value), Model.Resistance_E.Unit.GetSymbol())</div>
+                    <div class="text-overlay-resistance-y-circuit-3">@GetTextOnImage("R(Y)", Round(Model.Resistance_y.Value), Model.Resistance_y.Unit.GetSymbol())</div>
+                    <div class="text-overlay-resistance-pi-circuit-3-2">@GetTextOnImage("R(π)", Round(Model.Resistance_Pi.Value), Model.Resistance_Pi.Unit.GetSymbol())</div>
+                    <div class="text-overlay-gmv-pi-circuit-3">@GetTextOnImage("GMV(π)",  Round(Model.GMV_Pi), AmperUnit.Amper.GetSymbol())</div>
+                    <div class="text-overlay-voltage-g-circuit-3">@GetTextOnImage("V(G)", Round(Model.Voltage_BE.Value), Model.Voltage_BE.Unit.GetSymbol())</div>
+                </div>
+                <div class="row mb-3 mt-4">
+                    <label class="col-sm-3 col-form-label" for="basic-default-name">f<sub>C1</sub></label>
+                    <div class="col-sm-6">
+                        <input class="form-control" id="basic-default-name" value=@Round(@Model.Frequency_C1.Value) disabled />
+                    </div>
+                    <div class="col-sm-3">
+                        <select class="form-select" value="@Model.Frequency_C1.Unit" @onchange="@((ChangeEventArgs e) => ConvertToHertzUnit(e, Model.Frequency_C1))">
+                            <HertzUnitSelectOptions></HertzUnitSelectOptions>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="basic-default-name">f<sub>C2</sub></label>
+                    <div class="col-sm-6">
+                        <input class="form-control" id="basic-default-name" value=@Round(@Model.Frequency_C2.Value) disabled />
+                    </div>
+                    <div class="col-sm-3">
+                        <select class="form-select" value="@Model.Frequency_C2.Unit" @onchange="@((ChangeEventArgs e) => ConvertToHertzUnit(e, Model.Frequency_C2))">
+                            <HertzUnitSelectOptions></HertzUnitSelectOptions>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="basic-default-name">f<sub>L</sub></label>
+                    <div class="col-sm-6">
+                        <input class="form-control" id="basic-default-name" value=@Round(Model.Frequency_L.Value) disabled />
+                    </div>
+                    <div class="col-sm-3">
+                        <select class="form-select" value="@Model.Frequency_L.Unit" @onchange="@((ChangeEventArgs e) => ConvertToHertzUnit(e, Model.Frequency_L))">
+                            <HertzUnitSelectOptions></HertzUnitSelectOptions>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-3 col-form-label" for="basic-default-name">|K<sub>VI<sub>(fL)</sub></sub>|</label>
+                    <div class="col-sm-6">
+                        <input class="form-control" id="basic-default-name" value=@Round(Model.VoltageGain) disabled />
+                    </div>
+                    <div class="col-sm-3">
+                        <select class="form-select" aria-label=".form-select-lg example">
+                            <option selected>dB</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    private CalculateViewModel? Model { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Model = new CalculateViewModel();
+    }
+
+    public void Calculate(CalculateViewModel model)
+    {
+        if (!CheckIfAnyModelValueNull(model))
+        {
+            ToastService.ShowError("Tüm değerleri eksiksiz giriniz.", o =>
+            {
+                o.IconType = IconType.Blazored;
+                o.ShowProgressBar = true;
+                o.Timeout = 3;
+            });
+            return;
+        }
+
+        var calculateRequest = CalculateForCircuitsMapper.Map(model!);
+        var calculateForCircuitsResponse = ElectricCircuitCalculator.Calculate(calculateRequest);
+        CalculateForCircuitsMapper.Map(calculateForCircuitsResponse, model!);
+
+        StateHasChanged();
+    }
+
+    public async Task ChangeTheme()
+    {
+        await LocalStorage.RemoveItemAsync(WebConstants.ThemeKey);
+        await LocalStorage.SetItemAsync(WebConstants.ThemeKey, WebConstants.SingleBlockThemeName);
+        NavigationManager.NavigateTo("/1");
+    }
+}

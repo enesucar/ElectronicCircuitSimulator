@@ -1,0 +1,157 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ElectronicCircuitSimulator.Web.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ElectronicCircuitSimulator.Web.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\css\\font.css",
+      "PackagePath": "staticwebassets\\assets\\css\\font.css"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\fonts\\ijwRs572Xtc6ZYQws9YVwnNGfJ4.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\ijwRs572Xtc6ZYQws9YVwnNGfJ4.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\fonts\\ijwRs572Xtc6ZYQws9YVwnNIfJ7Cww.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\ijwRs572Xtc6ZYQws9YVwnNIfJ7Cww.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\fonts\\ijwRs572Xtc6ZYQws9YVwnNJfJ7Cww.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\ijwRs572Xtc6ZYQws9YVwnNJfJ7Cww.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\fonts\\ijwTs572Xtc6ZYQws9YVwnNDTJLax9k0.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\ijwTs572Xtc6ZYQws9YVwnNDTJLax9k0.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\fonts\\ijwTs572Xtc6ZYQws9YVwnNDTJPax9k0.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\ijwTs572Xtc6ZYQws9YVwnNDTJPax9k0.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\fonts\\ijwTs572Xtc6ZYQws9YVwnNDTJzaxw.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\ijwTs572Xtc6ZYQws9YVwnNDTJzaxw.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\img\\ac.png",
+      "PackagePath": "staticwebassets\\assets\\img\\ac.png"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\img\\dc.png",
+      "PackagePath": "staticwebassets\\assets\\img\\dc.png"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\img\\frequency.png",
+      "PackagePath": "staticwebassets\\assets\\img\\frequency.png"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\vendor\\css\\core.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\css\\core.css"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\vendor\\css\\theme-default.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\css\\theme-default.css"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\vendor\\fonts\\boxicons.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\boxicons.css"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\vendor\\fonts\\boxicons\\boxicons.eot",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\boxicons\\boxicons.eot"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\vendor\\fonts\\boxicons\\boxicons.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\boxicons\\boxicons.svg"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\vendor\\fonts\\boxicons\\boxicons.ttf",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\boxicons\\boxicons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\vendor\\fonts\\boxicons\\boxicons.woff",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\boxicons\\boxicons.woff"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\vendor\\fonts\\boxicons\\boxicons.woff2",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\boxicons\\boxicons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\vendor\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\vendor\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\vendor\\js\\menu.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\js\\menu.js"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\vendor\\libs\\apex-charts\\apex-charts.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\libs\\apex-charts\\apex-charts.css"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\vendor\\libs\\apex-charts\\apexcharts.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\libs\\apex-charts\\apexcharts.js"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\vendor\\libs\\highlight\\highlight-github.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\libs\\highlight\\highlight-github.css"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\vendor\\libs\\highlight\\highlight.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\libs\\highlight\\highlight.css"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\vendor\\libs\\highlight\\highlight.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\libs\\highlight\\highlight.js"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\vendor\\libs\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\libs\\jquery\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\vendor\\libs\\masonry\\masonry.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\libs\\masonry\\masonry.js"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\assets\\vendor\\libs\\popper\\popper.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\libs\\popper\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\Enes\\Desktop\\ElectronicCircuitSimulator\\src\\ElectronicCircuitSimulator.Web\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ElectronicCircuitSimulator.Web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ElectronicCircuitSimulator.Web.props",
+      "PackagePath": "build\\ElectronicCircuitSimulator.Web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ElectronicCircuitSimulator.Web.props",
+      "PackagePath": "buildMultiTargeting\\ElectronicCircuitSimulator.Web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ElectronicCircuitSimulator.Web.props",
+      "PackagePath": "buildTransitive\\ElectronicCircuitSimulator.Web.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

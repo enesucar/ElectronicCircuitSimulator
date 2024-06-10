@@ -1,0 +1,10 @@
+﻿@using ElectronicCircuitSimulator.Core.Enums
+
+@foreach (AmperUnit amperUnit in Enum.GetValues(typeof(AmperUnit)))
+{
+    <option value="@amperUnit">@amperUnit.GetSymbol()</option>
+}
+
+@code {
+
+}

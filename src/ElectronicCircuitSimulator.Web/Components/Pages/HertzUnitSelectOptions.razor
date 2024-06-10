@@ -1,0 +1,9 @@
+﻿@using ElectronicCircuitSimulator.Core.Enums
+
+@foreach (HertzUnit hertzUnit in Enum.GetValues(typeof(HertzUnit)))
+{
+    <option value="@hertzUnit">@hertzUnit.GetSymbol()</option>
+}
+@code {
+
+}
