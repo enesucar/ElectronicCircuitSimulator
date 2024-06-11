@@ -1,4 +1,4 @@
-﻿    using ElectronicCircuitSimulator.Core.Constants;
+using ElectronicCircuitSimulator.Core.Constants;
 using ElectronicCircuitSimulator.Core.Enums;
 using ElectronicCircuitSimulator.Core.Interfaces;
 using ElectronicCircuitSimulator.Core.Models;
